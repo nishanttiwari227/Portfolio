@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="Screenshot 2025-03-04 164201.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/e11fcca011.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="heroSection" style=" display: flex; align-items:center; justify-content:center; height: 90vh;">
+                <div class="header-text" style="display:flex; flex-direction: column; align-items:flex-start; justify-content:center;" id="home">
+                    <h1><div>Hello, I'm </div><div style="color: #ffcc00; display: inline;">NISHANT TIWARI</div> <div>MANIT, BHOPAL</div></h1>
+                </div>
+                <div>
+                    <img class="heroImage" src="Images/heroImage.svg" alt="">
+                </div>
+            </div>              
+        </div>
+    </div>
+    <!-- ===========================about================================ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/ns.jpg" style="object-fit: cover;">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    
+                        
+                    
+                    <p>
+                        I am a passionate web developer, well-versed in Python, and currently pursuing a B.Tech at MANIT
+                        Bhopal. I enjoy building dynamic web applications, solving coding challenges, and continuously
+                        learning new technologies to enhance my skill set.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('technical-skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      
+                    </div>
+
+                    <style>
+                        .tab-contents ul {
+                            list-style: none;
+                            padding: 0;
+                        }
+                    
+                        .tab-contents ul li {
+                            margin: 15px 0;
+                            font-size: 1.1em;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                    
+                        .tab-contents ul li i {
+                            font-size: 1.5em;
+                            color: #007bff;
+                        }
+                    
+                        .tab-contents span {
+                            font-weight: bold;
+                            color: #f8f9fa;
+                        }
+                    
+                        .progress-bar {
+                            width: 80%;
+                            background: #2b2b2b;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                        }
+                    
+                        .progress-bar div {
+                            height: 10px;
+                            border-radius: 20px;
+                        }
+                    
+                        .html-bar { background: #64b5f6; width: 90%; }
+                        .css-bar { background: #64b5f6; width: 85%; }
+                        .js-bar { background: #64b5f6; width: 75%; }
+                        .python-bar { background: #64b5f6; width: 80%; }
+                        .cpp-bar { background: #64b5f6; width: 70%; }
+
+                        .problem-bar { background: #64b5f6; width: 85%; }
+                        .team-bar { background: #64b5f6; width: 90%; }
+                        .adapt-bar { background: #64b5f6; width: 80%; }
+                        .comm-bar { background: #64b5f6; width: 75%; }
+                        .time-bar { background: #64b5f6; width: 70%; }
+
+                    </style>
+                    
+                    <div class="tab-contents active-tab" id="technical-skills">
+                        <ul>
+                            <li><i class="fab fa-html5"></i> <span>HTML</span></li>
+                            <div class="progress-bar"><div class="html-bar"></div></div>
+                            
+                            <li><i class="fab fa-css3-alt"></i> <span>CSS</span></li>
+                            <div class="progress-bar"><div class="css-bar"></div></div>
+                            
+                            <li><i class="fab fa-js"></i> <span>JavaScript</span></li>
+                            <div class="progress-bar"><div class="js-bar"></div></div>
+                            
+                            <li><i class="fab fa-python"></i> <span>Python</span></li>
+                            <div class="progress-bar"><div class="python-bar"></div></div>
+                            
+                            <li><i class="fas fa-code"></i> <span>C/C++</span></li>
+                            <div class="progress-bar"><div class="cpp-bar"></div></div>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="soft-skills">
+                        <ul>
+                            <li><i class="fas fa-lightbulb"></i> <span>Problem-Solving</span></li>
+                            <div class="progress-bar"><div class="problem-bar"></div></div>
+                            
+                            <li><i class="fas fa-users"></i> <span>Team Collaboration</span></li>
+                            <div class="progress-bar"><div class="team-bar"></div></div>
+                            
+                            <li><i class="fas fa-sync-alt"></i> <span>Adaptability</span></li>
+                            <div class="progress-bar"><div class="adapt-bar"></div></div>
+                            
+                            <li><i class="fas fa-comments"></i> <span>Communication</span></li>
+                            <div class="progress-bar"><div class="comm-bar"></div></div>
+                            
+                            <li><i class="fas fa-clock"></i> <span>Time Management</span></li>
+                            <div class="progress-bar"><div class="time-bar"></div></div>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><i class="fas fa-user-cog"></i> <span>IEEE Society <br>Core Team Member</span><br>
+                                <ul>
+                                    <li><i class="fas fa-bullhorn"></i> <span>SCEECS</span><br>Managed technical aspects and coordinated event logistics</li>
+                                    <li><i class="fas fa-microphone"></i> <span>SAMWAD</span><br>Organized panel discussions and improved public speaking</li>
+                                    <li><i class="fas fa-rocket"></i> <span>AARAMBH</span><br>Led event planning and helped onboard new student members</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+     <!-- =========================services================================  -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure in dolorem placeat, iusto rerum
+                        nobis error voluptatibus reprehenderit maxime.</p>
+                    <a href="#" class="services-btn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-filter"></i>
+                    <h2>Data analysis</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum odit ab eaque cum officia
+                        quisquam porro distinctio ex expedita dignissimos.</p>
+                    <a href="#" class="services-btn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Coding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt eius inventore beatae
+                        cupiditate aspernatur, enim nostrum veniam laudantium voluptatem.</p>
+                    <a href="#" class="services-btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- =========================portfolio================================ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Game.png">
+                    <div class="layer">
+                        <h3 style="color: #39cc10; font-weight: bold;">Car Racing Game</h3>
+                        <p>The app use to kill your boredum. Let's enjoy your free time.</p>
+                        <a href="https://github.com/nishanttiwari227/Car-racing-game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Portfolio.png">
+                    <div class="layer">
+                        <h3 style="color: #17d7d4; font-weight: bold;">Portfolio</h3>
+                        <p>My simple portfolio.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/suicide_prevention_image.jpg">
+                    <div class="layer">
+                        <h3 style="color: #ffcc00; font-weight: bold;">Suicide Prevention System</h3>
+                        <p>Developed a system to monitor student web activity using Burp Suite and packet capturing for distress signal
+                            detection.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- =========================contact======================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nishantjhuniya@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 9450131411</p>
+                    <div class="social-icons">
+
+                        <a href="https://github.com/nishanttiwari227"><i class="fa-brands fa-github"></i></a>
+                        <a href="nishantjhuniya@gmail.com"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/nishant-tiwari-b01972280/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-square-x-twitter"></i></a> -->
+
+                    </div>
+                    <a href="RenderCV_EngineeringResumes_Theme.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input id="name" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Have a Nice Day <i class="fa-solid fa-face-smile"></i></p>
+    </footer>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>     
+      <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzremhZX4r8Hs8vNwcnEx66-rE0U0GAs_07wlTvRo3OaXPtOIbQfkSURJUQ6C9jOH7T/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+      <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzremhZX4r8Hs8vNwcnEx66-rE0U0GAs_07wlTvRo3OaXPtOIbQfkSURJUQ6C9jOH7T/exec";
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+    
+            msg.innerHTML = "Sending..."; // Display message while sending
+    
+            try {
+                const response = await fetch(scriptURL, { 
+                    method: 'POST', 
+                    body: new FormData(form) 
+                });
+    
+                if (response.ok) {
+                    msg.innerHTML = "Message sent successfully! ✅";
+                    form.reset(); // Clear form fields
+                } else {
+                    msg.innerHTML = "Error! Message not sent. ❌";
+                }
+            } catch (error) {
+                console.error('Error!', error);
+                msg.innerHTML = "Error! Please try again later. ❌";
+            }
+    
+            // Clear message after 5 seconds
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+        });
+    </script>
+</body>
+
